@@ -2,11 +2,11 @@
 % Function domain
 [x,y] = meshgrid(-4:0.1:4,-2:0.1:2)
 % Function values
-z = x.*exp(-x.^2-y.^2)
+z = x.*exp(-x.^2-y.^2);
 % Figure initialization
 figure(1)
 % Plotting figure
-surfc(x,y,z)
+surf(x,y,z)
 % Title
 title('z_B = x exp(-x^2 - y^2)')
 % Labels
@@ -16,6 +16,6 @@ zlabel('z_B')
 % Grid
 grid MINOR
 % Colormap
-colormap(cool)
+colormap(autumn)
 % Shading
 shading interp
